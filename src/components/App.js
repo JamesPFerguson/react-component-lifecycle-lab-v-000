@@ -29,18 +29,18 @@ class App extends React.Component {
       latestTweets: newTweets
     });
   }
-  
+
   componentWillMount() {
-  this.fetchTweets();
-}
+    this.fetchTweets();
+  }
 
 componentDidMount() {
-  this.startInterval();
-}
+    this.startInterval();
+  }
 
 componentWillUnmount() {
-  this.cleanUpInterval();
-}
+    this.cleanUpInterval();
+  } 
 
   render() {
     return (
